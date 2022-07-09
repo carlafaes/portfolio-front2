@@ -47,11 +47,11 @@ export default function About() {
                     justifyContent="center"
                     alignItems="center">
 
-                    <Grid item xs={12} md={4} xl={4}>
+                    <Grid item xs={10} md={4} xl={4}>
                         <img style={{ width: '400px' }} src={enPC} alt="en_pc" />
 
                     </Grid>
-                    <Grid item xs={12} md={8} xl={8}>
+                    <Grid item xs={10} md={7} xl={7}>
                         <Grid item xs={4} md={4} xl={2}>
                             <Parallax speed={-5}>
                                 <img src={www} alt="www" className={s.img} />
