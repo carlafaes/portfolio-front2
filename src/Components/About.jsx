@@ -8,7 +8,7 @@ import axios from 'axios';
 import Typewriter from 'typewriter-effect'
 import s from '../style/About.module.css';
 import Parallax from 'react-rellax'
-import Project from './Team';
+import Team from './Team';
 
 //utils
 import www from '../utils/www.png';
@@ -59,7 +59,7 @@ export default function About() {
                               </Grid>
                               <Grid item xs={4} md={4} xl={2}>
                               </Grid>
-                                <p className={s.parr}> Hola, Soy Carla Faes <br /> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br /> Me gusta aprender nuevas tecnologias, y trabajar en equipo.</p>
+                                <p className={s.parr}> Hola, Soy Carla Faes <br /> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br /></p>
                                 <p className={s.parr}>...Otras cosas que me gusta hacer son:
                                     {tab}
                                 </p>
@@ -77,8 +77,8 @@ export default function About() {
 
                     </Grid>
                 </Box>
-                <Project />
-    
+                <Team />
+                
         </div>
     );
 }

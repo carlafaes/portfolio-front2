@@ -3,6 +3,11 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Parallax from 'react-rellax'
+import s from '../style/Team.module.css';
+
+//utils
+import equipo from '../utils/equipo.png';
+import note from '../utils/note.png';
 
 export default function Team() {
     const Item = styled(Paper)(({ theme }) => ({
@@ -18,36 +23,24 @@ export default function Team() {
             <Box sx={{ bgcolor: '#1d2025', height: '100vh',flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={2}>
             <Grid container 
                         spacing={8} 
-                        direction="row"
+                        direction="row-reverse"
                         justifyContent="center"
                         alignItems="center">
-                              <Grid item xs={12} md={4} xl={4}>
-                                <Item>
-                                    <Parallax speed={-8}>
-                                        s
+                              <Grid item xs={12} md={6} xl={6}>
+                                    <Parallax speed={0}>
+                                        <p className={s.parr}> Me gusta aprender nuevas tecnologias, y considero el trabajar en equipo como parte fundamental para buenos resultados.</p>
                                     </Parallax>
-                                </Item>
+                                    <Grid >
+                                        <Parallax speed={-5}>
+                                        <img src={note} alt="note" className={s.note} />
+                                        </Parallax>
+                                    </Grid>       
                               </Grid>
 
-                              <Grid item xs={12} md={8} xl={8}>
-                                <Item>
-                                    
-                                </Item>
+                              <Grid item xs={12} md={6} xl={6}>
+                                    <img src={equipo} alt="equipo" className={s.img} />
                               </Grid>
 
-                              <Grid item xs={12} md={4} xl={4}>
-                                <Item>
-                                    <Parallax speed={-8}>
-                                        s
-                                    </Parallax>
-                                </Item>
-                              </Grid>
-
-                              <Grid item xs={12} md={8} xl={8}>
-                                <Item>
-                                    
-                                </Item>
-                              </Grid>
                         </Grid>
             </Box>
         </div>
