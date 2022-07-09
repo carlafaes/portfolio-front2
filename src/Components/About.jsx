@@ -28,7 +28,7 @@ export default function About() {
     }, [])
 
     const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1d2025' : '#1d2025',
+        backgroundColor: theme.palette.mode === 'dark' ? '#0b0214' : '#0b0214',
         ...theme.typography.body2,
         padding: theme.spacing(4),
         textAlign: 'center',

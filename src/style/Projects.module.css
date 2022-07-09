@@ -1,0 +1,11 @@
+.img{
+    width: 100px;
+    color: #0b0214;
+}
+.title{
+    background-color: transparent;
+    padding: 15px;
+    color: rgb(178, 167, 185) !important;
+    font-size: 25px !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}

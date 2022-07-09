@@ -3,7 +3,6 @@ import axios from 'axios';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Parallax from 'react-rellax'
 import Carousel from 'react-elastic-carousel';
 import Card from '@mui/material/Card';
@@ -11,7 +10,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import {CardActionArea, CardActions } from '@mui/material';
+import s from '../style/Projects.module.css';
+
+//utils
+import code from '../utils/code1.png';
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
@@ -43,14 +46,16 @@ export default function Projects() {
                     justifyContent="center"
                     alignItems="center">
                     <Grid item xs={10} md={4} xl={4}>
-                        <h1>Estos son algunos de los proyectos que he realizado. Algunos de ellos los hice junto con grandes personas y programadores.</h1>
-
+                        <h1 className={s.title}>Estos son algunos de los proyectos que he realizado. Algunos de ellos los hice junto con grandes personas y programadores.</h1>
+                        <Grid>
+                            <img src={code} alt="code" className={s.img} />
+                        </Grid>
                     </Grid>
                     <Grid item xs={10} md={8} xl={4}>
                         <Carousel
                             breakPoints={breakPoints}
                             enableAutoPlay
-                            autoPlaySpeed={2500}
+                            autoPlaySpeed={3000}
                             itemPadding={[10, 10]}
                             focusOnSelect={false}
                             ref={carouselRef}

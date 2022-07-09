@@ -7,12 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import TerminalTwoToneIcon from '@mui/icons-material/TerminalTwoTone';
 import Link from '@mui/material/Link';
+import s from '../style/Navbar.module.css';
 
 
 const pages = [{name:'Descargar CV',link:'/curriculum'},{name:'Github',link:'https://github.com/carlafaes'} ,{name:'LinkedIn',link:'https://www.linkedin.com/in/carla-faes/'} ];
@@ -113,7 +111,10 @@ const ResponsiveAppBar = () => {
                 key={page.name}
                 href={page.link}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 3, color: 'white', display: 'block' }}
+                underline="hover"
+                target="_blank"
+                className={s.link}
               >
                 {page.name}
               </Link> 
