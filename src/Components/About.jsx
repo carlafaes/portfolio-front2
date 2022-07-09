@@ -9,6 +9,8 @@ import Typewriter from 'typewriter-effect'
 import s from '../style/About.module.css';
 import Parallax from 'react-rellax'
 import Team from './Team';
+import Projects from './Projects';
+import Navbar from './Navbar';
 
 //utils
 import www from '../utils/www.png';
@@ -37,48 +39,48 @@ export default function About() {
     return (
         <div className="about">
             {/* <CssBaseline /> */}
-         
-                <Box sx={{ bgcolor: '#1d2025', height: '100vh',flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={1}>
-                    <Grid container 
-                        spacing={8} 
-                        direction="row-reverse"
-                        justifyContent="center"
-                        alignItems="center">
+            <Navbar />
+            <Box sx={{ bgcolor: '#1d2025', height: '100vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={1}>
+                <Grid container
+                    spacing={8}
+                    direction="row-reverse"
+                    justifyContent="center"
+                    alignItems="center">
 
-                        <Grid item xs={12} md={4} xl={4}>
-                                <img style={{ width: '400px' }} src={enPC} alt="en_pc" />
-                            
-                        </Grid>
-                        <Grid item xs={12} md={8} xl={8}>
-                        <Grid item xs={4} md={4} xl={2}>
-                        <Parallax speed={-5}>
-                                <img src={www} alt="www" className={s.img} />
-                                </Parallax>
-                              </Grid>
-                              <Grid item xs={4} md={4} xl={8}>
-                              </Grid>
-                              <Grid item xs={4} md={4} xl={2}>
-                              </Grid>
-                                <p className={s.parr}> Hola, Soy Carla Faes <br /> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br /></p>
-                                <p className={s.parr}>...Otras cosas que me gusta hacer son:
-                                    {tab}
-                                </p>
-                                <div className={s.typewriter}>
-                                <Typewriter
-                                    options={{
-                                        strings: ['Desarrollo FrontEnd👩‍💻', 'Pintura artistica 🎨', 'Estudiar autodidacta👓 '],
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                    />
-                                </div>
-                            
-                        </Grid>
+                    <Grid item xs={12} md={4} xl={4}>
+                        <img style={{ width: '400px' }} src={enPC} alt="en_pc" />
 
                     </Grid>
-                </Box>
-                <Team />
-                
+                    <Grid item xs={12} md={8} xl={8}>
+                        <Grid item xs={4} md={4} xl={2}>
+                            <Parallax speed={-5}>
+                                <img src={www} alt="www" className={s.img} />
+                            </Parallax>
+                        </Grid>
+                        <Grid item xs={4} md={4} xl={8}>
+                        </Grid>
+                        <Grid item xs={4} md={4} xl={2}>
+                        </Grid>
+                        <p className={s.parr}> Hola, Soy Carla Faes <br /> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br /></p>
+                        <p className={s.parr}>...Otras cosas que me gusta hacer son:
+                            {tab}
+                        </p>
+                        <div className={s.typewriter}>
+                            <Typewriter
+                                options={{
+                                    strings: ['Desarrollo FrontEnd👩‍💻', 'Pintura artistica 🎨', 'Estudiar autodidacta👓 '],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </div>
+
+                    </Grid>
+
+                </Grid>
+            </Box>
+            <Team />
+            <Projects />
         </div>
     );
 }

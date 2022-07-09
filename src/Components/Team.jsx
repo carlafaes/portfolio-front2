@@ -27,14 +27,14 @@ export default function Team() {
                         justifyContent="center"
                         alignItems="center">
                               <Grid item xs={12} md={6} xl={6}>
-                                    <Parallax speed={0}>
-                                        <p className={s.parr}> Me gusta aprender nuevas tecnologias, y considero el trabajar en equipo como parte fundamental para buenos resultados.</p>
-                                    </Parallax>
                                     <Grid >
-                                        <Parallax speed={-5}>
+                                        <Parallax speed={-3}>
                                         <img src={note} alt="note" className={s.note} />
                                         </Parallax>
                                     </Grid>       
+                                    <Parallax speed={1}>
+                                        <p className={s.parr}> Me gusta aprender nuevas tecnologias, y considero el trabajar en equipo como parte fundamental para buenos resultados.</p>
+                                    </Parallax>
                               </Grid>
 
                               <Grid item xs={12} md={6} xl={6}>
