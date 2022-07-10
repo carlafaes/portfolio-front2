@@ -17,3 +17,11 @@
 .note{
     width: 100px;
 }
+.cont{
+    height: 100vh;
+    background-image:url('https://i.imgur.com/8w87YgS.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1d2025;
+}

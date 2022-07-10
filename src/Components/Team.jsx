@@ -11,7 +11,7 @@ import note from '../utils/note.png';
 
 export default function Team() {
     const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1d2025' : '#1d2025',
+        backgroundColor: theme.palette.mode === 'dark' ? '' : '',
         ...theme.typography.body2,
         padding: theme.spacing(4),
         textAlign: 'center',
@@ -19,8 +19,8 @@ export default function Team() {
     }));
 
     return (
-        <div style={{ height: '100vh' }}>
-            <Box sx={{ bgcolor: '#1d2025', height: '100vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={2}>
+        <div className={s.cont}>
+            <Box sx={{ bgcolor: '', height: '100vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={2}>
                 <Grid container
                     spacing={8}
                     direction="row-reverse"

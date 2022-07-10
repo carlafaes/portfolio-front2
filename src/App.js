@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 
 ///components
 import About from './Components/About';
+import All from './Components/All';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
          <Container disableGutters fixed >
           <Box sx={{ display: { xs: 'block', md: 'none', lg: 'block' } }}>
      <Routes>
-      <Route path="/" element={<About />} />
+      <Route path="/" element={<All />} />
      </Routes>
      </Box>
      </Container>

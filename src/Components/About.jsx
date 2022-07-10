@@ -79,8 +79,6 @@ export default function About() {
 
                 </Grid>
             </Box>
-            <Team />
-            <Projects />
         </div>
     );
 }
