@@ -8,6 +8,7 @@ import Parallax from 'react-rellax'
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 
+
 //utils
 import html from '../utils/html.png';
 import css from '../utils/css.png';
@@ -27,6 +28,7 @@ export default function Tools() {
 
     return (
         <div className={s.container}>
+            <Box sx={{ bgcolor: '#1d2025', height: '90vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={0}>
             <Grid container spacing={8} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={10} md={12} xl={4}>
                     <p className={s.pfo}>Algunas de las tecnologías que <br /> he implementado en mis proyectos son</p>
@@ -59,6 +61,7 @@ export default function Tools() {
                     <img src={redux} alt="redux" className={s.img} />
                 </Grid>
             </Grid>
+            </Box>
         </div>
     )
 }

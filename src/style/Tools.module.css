@@ -8,8 +8,12 @@
 }
 
 .pfo{
-    color: aliceblue;
+    background-color: transparent;
+    padding-top: 10%;
+    color: rgb(178, 167, 185);
     font-size: 30px;
+    font-weight: 600;
+    text-shadow: 3px 2px 2px black;
 }
 
 .img{
