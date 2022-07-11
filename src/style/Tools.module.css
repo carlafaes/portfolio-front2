@@ -1,8 +1,22 @@
 .container{
     height: 100vh;
-    background-image:url('https://i.imgur.com/8w87YgS.png');
+    /* background-image:url('https://i.imgur.com/8w87YgS.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-color: #1d2025;
+}
+
+.pfo{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.img{
+    width: 100px;
+    padding: 10px;
+}
+
+.img2{
+    width: 300px;
 }

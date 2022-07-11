@@ -46,9 +46,13 @@ export default function Projects() {
                     justifyContent="center"
                     alignItems="center">
                     <Grid item xs={10} md={4} xl={4}>
+                        <Parallax speed={-0.5}>
                         <h1 className={s.title}>Estos son algunos de los proyectos que he realizado. Algunos de ellos los hice junto con grandes personas y programadores.</h1>
+                        </Parallax>
                         <Grid>
+                            <Parallax speed={1.5}>
                             <img src={code} alt="code" className={s.img} />
+                            </Parallax>
                         </Grid>
                     </Grid>
                     <Grid item xs={10} md={8} xl={4}>

@@ -28,7 +28,7 @@ export default function Team() {
                     alignItems="center">
                     <Grid item xs={12} md={6} xl={6}>
                         <Grid >
-                            <Parallax speed={1.5}>
+                            <Parallax speed={1}>
                                 <img src={note} alt="note" className={s.note} />
                             </Parallax>
                         </Grid>
