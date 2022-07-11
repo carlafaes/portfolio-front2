@@ -1,10 +1,7 @@
 import * as React from 'react';
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import { useEffect, useState } from "react";
 import s from '../style/Tools.module.css';
-import Parallax from 'react-rellax'
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 
