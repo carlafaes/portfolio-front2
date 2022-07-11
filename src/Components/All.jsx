@@ -4,6 +4,7 @@ import Projects from "./Projects"
 import Navbar from "./Navbar"
 import Tools from "./Tools"
 import Contact from "./Contact"
+import Footer from "./Footer"
 
 export default function All() {
     return (
@@ -13,6 +14,7 @@ export default function All() {
             <Projects />
             <Tools />
             <Contact />
+            <Footer/>
         </div>
     )
 }

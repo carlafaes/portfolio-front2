@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" color="secondary" enableColorOnDark>
+    <AppBar position="static" enableColorOnDark className={s.nav}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <TerminalTwoToneIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
