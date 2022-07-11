@@ -3,6 +3,7 @@ import Team from "./Team"
 import Projects from "./Projects"
 import Navbar from "./Navbar"
 import Tools from "./Tools"
+import Contact from "./Contact"
 
 export default function All() {
     return (
@@ -11,6 +12,7 @@ export default function All() {
             <Team />
             <Projects />
             <Tools />
+            <Contact />
         </div>
     )
 }

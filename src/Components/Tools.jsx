@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { useEffect, useState } from "react";
 import s from '../style/Tools.module.css'; 
+import Parallax from 'react-rellax'
 
 
 //utils
@@ -27,6 +28,11 @@ export default function Tools(){
                     <p className={s.pfo}>Algunas de las tecnologías que <br/> he implementado en mis proyectos son</p>
                 </Grid>
                 <Grid item xs={10} md={6} xl={6}>
+                    <Parallax speed={0}>
+                    <img src={code} alt="code" className={s.img2} />
+                    </Parallax>
+                </Grid>
+                <Grid item xs={10} md={6} xl={6}>
                    <img src={html} alt="html" className={s.img} />
                      <img src={css} alt="css" className={s.img} />
                         <img src={js} alt="js" className={s.img} />
@@ -36,9 +42,6 @@ export default function Tools(){
                         <img src={api} alt="api" className={s.img} />
                         <img src={postgresql} alt="postgresql" className={s.img} />
                         <img src={redux} alt="redux" className={s.img} />
-                </Grid>
-                <Grid item xs={10} md={6} xl={6}>
-                    <img src={code} alt="code" className={s.img2} />
                 </Grid>
             </Grid>
         </div>
