@@ -18,9 +18,9 @@ function App() {
      <Paper>
      <Grid container
                     spacing={1}
-                    direction="column"
-                    justifyContent="center"
-                    alignItems="center">
+                    direction="row"
+                   >
+              
      <Routes>
       <Route path="/" element={<All />} />
       <Route path="/curriculum" element={<Download />} />

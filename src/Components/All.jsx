@@ -8,12 +8,17 @@ import Footer from "./Footer"
 
 export default function All() {
     return (
-        <div>
+        <div style={{backgroundColor:'#1d2025'}}>
             <About />
+            <br/>
             <Team />
+            <br/>
             <Projects />
+            <br/>
             <Tools />
+            <br/>
             <Contact />
+            <br/>
             <Footer/>
         </div>
     )

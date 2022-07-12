@@ -39,7 +39,7 @@ export default function Team() {
                         <motion.div
                                initial="offscreen"
                                whileInView="onscreen"
-                               viewport={{ once: false, amount: 0.8 }}
+                               viewport={{ once: true, amount: 0.2 }}
                                variants={cardVariants}
                         >
                                 <img src={note} alt="note" className={s.note} />
