@@ -4,12 +4,10 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Grid from '@mui/material/Grid';
-import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 
 
-//utils
-import contact from '../utils/contact.png';
+
 //probando terminal
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,8 +19,6 @@ export default function Mailer(initial = {}) {
         user_email: '',
         user_message: ''
     })
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [2, 0.2], [0, 1.5]);
 
 
 
@@ -71,7 +67,7 @@ export default function Mailer(initial = {}) {
         <div >
 
             <Grid container
-                spacing={8}
+                spacing={3}
                 direction={"row"}
                 justifyContent="center"
                 alignItems="center">
@@ -115,23 +111,7 @@ export default function Mailer(initial = {}) {
                         </Button>
                     </Form>
                 </Grid>
-                <Grid item xs={10} md={4} xl={4}>
-                    <motion.div
-                        className="container"
-                        style={{
-                            scale
-                        }}
-                    >
-                        <motion.div
-                            className="item"
-                            style={{
-                                scaleY: scrollYProgress
-                            }}
-                        />
-                        <img src={contact} alt="contact" className="img-fluid" />
-                    </motion.div>
-
-                </Grid>
+               
             </Grid>
             <ToastContainer
                 theme='dark'

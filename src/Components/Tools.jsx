@@ -25,12 +25,12 @@ export default function Tools() {
 
     return (
         <div className={s.container}>
-            <Box sx={{ bgcolor: '#1d2025', height: '90vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={0}>
-            <Grid container spacing={8} direction="row" justifyContent="center" alignItems="center">
+            <Box sx={{ bgcolor: '#1d2025', height: '90vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 1fr)" gap={2}>
+            <Grid container spacing={3} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={10} md={12} xl={4}>
                     <p className={s.pfo}>Algunas de las tecnologías que <br /> he implementado en mis proyectos son</p>
                 </Grid>
-                <Grid item xs={10} md={6} xl={6}>
+                <Grid item xs={12} md={6} xl={6}>
                     <motion.div
                         className="container"
                         style={{
@@ -46,7 +46,7 @@ export default function Tools() {
                         <img src={code} alt="code" className={s.img2} />
                     </motion.div>
                 </Grid>
-                <Grid item xs={10} md={6} xl={6}>
+                <Grid item xs={12} md={6} xl={6} >
                     <img src={html} alt="html" className={s.img} />
                     <img src={css} alt="css" className={s.img} />
                     <img src={js} alt="js" className={s.img} />

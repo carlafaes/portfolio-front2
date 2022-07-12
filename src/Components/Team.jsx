@@ -4,19 +4,27 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Parallax from 'react-rellax'
 import s from '../style/Team.module.css';
+import { motion, Variants  } from "framer-motion";
 
 //utils
 import equipo from '../utils/equipo.png';
 import note from '../utils/note.png';
 
 export default function Team() {
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '' : '',
-        ...theme.typography.body2,
-        padding: theme.spacing(4),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    }));
+    const cardVariants= {
+        offscreen: {
+          y: 300
+        },
+        onscreen: {
+          y: 40,
+          rotate: 0,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.9
+          }
+        }
+      };
 
     return (
         <div className={s.cont}>
@@ -28,13 +36,24 @@ export default function Team() {
                     alignItems="center">
                     <Grid item xs={12} md={6} xl={6}>
                         <Grid >
-                            <Parallax speed={1}>
+                        <motion.div
+                               initial="offscreen"
+                               whileInView="onscreen"
+                               viewport={{ once: false, amount: 0.8 }}
+                               variants={cardVariants}
+                        >
                                 <img src={note} alt="note" className={s.note} />
-                            </Parallax>
+                                </motion.div>
                         </Grid>
-                        <Parallax speed={1}>
-                            <p className={s.parr}> Me gusta aprender nuevas tecnologias, y considero el trabajar en equipo como parte fundamental para obtener buenos resultados.</p>
-                        </Parallax>
+                        <motion.div
+                               initial="offscreen"
+                               whileInView="onscreen"
+                               viewport={{ once: true, amount: 0.8 }}
+                               variants={cardVariants}
+                        >
+
+                            <p className={s.parr} > Me gusta aprender nuevas tecnologias, y considero el trabajar en equipo como parte fundamental para obtener buenos resultados.</p>
+                        </motion.div>
                     </Grid>
 
                     <Grid item xs={12} md={6} xl={6}>

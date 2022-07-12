@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .title{
     color: rgb(178, 167, 185);
     padding-top: 10%;
@@ -14,4 +17,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1d2025;
+}
+.img{
+    width: 200px;
+    padding: 10px;
 }

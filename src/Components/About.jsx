@@ -27,14 +27,7 @@ export default function About() {
             )
     }, [])
 
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#0b0214' : '#0b0214',
-        ...theme.typography.body2,
-        padding: theme.spacing(4),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    }));
-
+    
 
     return (
         <div className="about">
@@ -53,7 +46,7 @@ export default function About() {
                     </Grid>
                     <Grid item xs={10} md={7} xl={7}>
                         <Grid item xs={4} md={4} xl={2}>
-                            <Parallax speed={-5}>
+                            <Parallax speed={-2}>
                                 <img src={www} alt="www" className={s.img} />
                             </Parallax>
                         </Grid>
