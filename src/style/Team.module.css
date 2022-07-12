@@ -26,3 +26,8 @@
     background-repeat: no-repeat;
     background-color: #1d2025;
 }
+@media (max-width: 600px) {
+    .img{
+        display: none;
+    }
+}

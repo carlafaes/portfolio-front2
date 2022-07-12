@@ -49,7 +49,7 @@ export default function Projects() {
                         <Parallax speed={-0.5}>
                         <h1 className={s.title}>Estos son algunos de los proyectos que he realizado. Algunos de ellos los hice junto con grandes personas y programadores.</h1>
                         </Parallax>
-                        <Grid item xs={12} md={4} xl={4}>
+                        <Grid item xs={12} md={12} xl={12}>
                             <Parallax speed={1.5}>
                             <img src={code} alt="code" className={s.img} />
                             </Parallax>
@@ -60,7 +60,7 @@ export default function Projects() {
                             breakPoints={breakPoints}
                             enableAutoPlay
                             autoPlaySpeed={3000}
-                            itemPadding={[10, 10]}
+                            itemPadding={[5, 5]}
                             focusOnSelect={false}
                             ref={carouselRef}
                             onNextEnd={({ index }) => {
