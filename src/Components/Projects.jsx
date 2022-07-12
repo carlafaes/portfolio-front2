@@ -18,7 +18,7 @@ import code from '../utils/code1.png';
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
-    console.log(projects);
+    
 
     const breakPoints = [
         { width: 100, itemsToShow: 1 },
@@ -39,23 +39,23 @@ export default function Projects() {
 
     return (
         <div style={{ height: '100vh' }}>
-            <Box sx={{ bgcolor: '#1d2025', height: '100vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 2fr)" gap={2}>
+            <Box sx={{ bgcolor: '#1d2025', height: '100vh', flexGrow: 1 }} display="grid" gridTemplateColumns="repeat(1, 1fr)" gap={2}>
                 <Grid container
-                    spacing={8}
+                    spacing={6}
                     direction={"row"}
                     justifyContent="center"
                     alignItems="center">
-                    <Grid item xs={10} md={4} xl={4}>
+                    <Grid item xs={12} md={4} xl={4}>
                         <Parallax speed={-0.5}>
                         <h1 className={s.title}>Estos son algunos de los proyectos que he realizado. Algunos de ellos los hice junto con grandes personas y programadores.</h1>
                         </Parallax>
-                        <Grid>
+                        <Grid item xs={12} md={4} xl={4}>
                             <Parallax speed={1.5}>
                             <img src={code} alt="code" className={s.img} />
                             </Parallax>
                         </Grid>
                     </Grid>
-                    <Grid item xs={10} md={8} xl={4}>
+                    <Grid item xs={12} md={8} xl={4}>
                         <Carousel
                             breakPoints={breakPoints}
                             enableAutoPlay

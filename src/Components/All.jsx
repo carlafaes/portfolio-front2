@@ -8,7 +8,7 @@ import Footer from "./Footer"
 
 export default function All() {
     return (
-        <div style={{backgroundColor:'#1d2025'}}>
+        <div style={{backgroundColor:'#1d2025',minWidth:'700px',minHeight:'auto'}}>
             <About />
             <br/>
             <Team />
