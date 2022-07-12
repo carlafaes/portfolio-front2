@@ -22,7 +22,7 @@ export default function Mailer(initial = {}) {
         user_message: ''
     })
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [2, 0.1], [0, 2]);
+    const scale = useTransform(scrollYProgress, [2, 0.1], [0, 1.5]);
 
 
 
@@ -84,11 +84,16 @@ export default function Mailer(initial = {}) {
                                     placeholder="Ingresa tu nombre"
                                     aria-label="Username"
                                     aria-describedby="basic-addon1"
+                                    required
                                 />
                             </InputGroup >
                             <InputGroup className="mb-3">
                                 <InputGroup.Text>Email</InputGroup.Text>
-                                <Form.Control type="email" placeholder="Ingresa tu email" name='user_email' />
+                                <Form.Control 
+                                type="email" 
+                                placeholder="Ingresa tu email" 
+                                name='user_email'
+                                required />
                                 <InputGroup>
                                     <Form.Text className="text-muted">
                                         No se compartira tu email con nadie.
@@ -98,7 +103,11 @@ export default function Mailer(initial = {}) {
 
                             <InputGroup className="mb-3">
                                 <InputGroup.Text>Tu mensaje</InputGroup.Text>
-                                <Form.Control as="textarea" aria-label="With textarea" name='user_message' />
+                                <Form.Control 
+                                as="textarea" 
+                                aria-label="With textarea" 
+                                name='user_message'
+                                required />
                             </InputGroup>
                         </Form.Group>
                         <Button variant="secondary" type="submit">

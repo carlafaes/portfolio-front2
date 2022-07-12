@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 
 ///components
-import About from './Components/About';
+import Download from './Components/Download';
 import All from './Components/All';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Box sx={{ display: { xs: 'block', md: 'none', lg: 'block' } }}>
      <Routes>
       <Route path="/" element={<All />} />
+      <Route path="/curriculum" element={<Download />} />
      </Routes>
      </Box>
      </Container>
