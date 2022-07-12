@@ -22,7 +22,7 @@ export default function Mailer(initial = {}) {
         user_message: ''
     })
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [2, 0.1], [0, 1.5]);
+    const scale = useTransform(scrollYProgress, [2, 0.2], [0, 1.5]);
 
 
 
